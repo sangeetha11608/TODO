@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">To-Do App</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#todo">To-Do</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <h1>Welcome to Your Productivity Hub!</h1>
+        <p>Manage your tasks efficiently and never miss a deadline. Organize, plan, and track all your important activities in one place.</p>
+        <a href="#todo" class="btn">Start Managing Tasks</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About This App</h2>
+        <p>This professional To-Do application is designed to make your life organized and productive. You can add tasks, delete completed tasks, and manage your daily goals.</p>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Easy to Use</h3>
+                <p>Simple interface that lets you add, manage, and remove tasks easily.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Organized</h3>
+                <p>Keep all your tasks in one place and never lose track of important activities.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Responsive</h3>
+                <p>Works perfectly on desktop, tablet, and mobile devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- To-Do Section -->
+  <section id="todo">
+    <h2>My To-Do List</h2>
+    <div class="todo-container">
+        <div class="todo-input">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button id="add-btn">Add Task</button><br><br>
+            <button id="clear-all-btn">Clear All Tasks</button>
+        </div>
+        <div id="task-list" class="task-list"></div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have any feedback or questions? Send me a message below!</p>
+        <form class="contact-form" id="feedback-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="feedback-msg" class="feedback-msg"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My To-Do App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
